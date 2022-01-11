@@ -1,0 +1,15 @@
+import turtle
+t = turtle.Turtle()
+s = turtle.Screen()
+s.bgcolor('black')
+t.speed(15)
+col=['yellow','blue','orange','red']
+c=0
+for i in range(100):
+    t.forward(i*10)
+    t.left(144)
+    t.color(col[c])
+    if c==3:
+        c=0
+    else:
+        c+=1
